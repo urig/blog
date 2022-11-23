@@ -39,9 +39,9 @@ Here's a table showing the price differences for one such data point that we've 
 
 When you look at the bottom line of the above comparison (pun intended) it's plain to see that Spot VMs are more than 4.5 times cheaper to run than training in Vertex AI.
 
-But before the team jumped on the task of repackaging their training code into VM images, we took a broader look at what we were comparing and sure enough it was a case of the oranges versus apples fallacy.
+Spot VMs look like a very attractive option all of a sudden. Before the team jumped on the task of repackaging their training code into VM images, we took a broader look at the picture. Sure enough it was a case of the good old "comparing oranges to apples" fallacy.
 
-![Image showing apples and oranges](/assets/images/apples-vs-oranges.jpg)
+![Image showing apples and oranges](/assets/images/apples-vs-oranges.jpg.jpg)
 *Image credit: [pvproductions](https://www.freepik.com/free-photo/green-apples-oranges-white-background-closeup_26932164.htm)*
 
 Indeed, when comparing the features of the two services it became clear that while Vertex AI Training offers a rich [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) experience, Spot VMs are a lower level [IaaS](https://en.wikipedia.org/wiki/Infrastructure_as_a_service) offering.
@@ -58,4 +58,6 @@ All of the above capabilities have proven to be of highly valuable to the team i
 
 To truly achieve feature parity with Vertex AI, the team would need to either outsource the work or shift their focus from machine learning to infrastructure development. The effort involves not only developing the functionality but also maintaining it over time.
 
-The team's ultimate conclusion is that at the expected scale of training operations, the cost of transitioning to Spot VMs would significantly exceed the reductions in running costs.
+In my personal story, the team's ultimate conclusion was that at the expected scale of training operations, the cost of transitioning to Spot VMs would significantly exceed the reductions in running costs. 
+
+How about you? Do you agree? Do you think differently? I'd love to know. To comment on this post, you can reply to this Mastodon toot:
