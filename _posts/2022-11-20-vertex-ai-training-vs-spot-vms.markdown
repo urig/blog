@@ -11,6 +11,8 @@ categories: cloud google google-cloud-platform vertex-ai machine-learning vertex
 
 ---
 
+### Training Machine Learning Models in Google Cloud
+
 A few months back I assisted one of my clients in scaling their machine learning training payloads to be faster and more extensive than before.
 
 The approach I advised and implemented with the client team was to shift from running on local GPU-accelerated machines to using Google Cloud's [Vertex AI Training](https://cloud.google.com/vertex-ai/docs/training/custom-training) service.
@@ -23,11 +25,19 @@ Alas, good things are not free. The more training power you have, the more train
 
 While seeking new approaches to reduce costs while maintaining and even increasing the scope of training, the head of the client research team suggested the idea of using Spot VMs (Virtual Machines).
 
-Spot VMs are virtual machines instances that run in the cloud at great discount. The catch? The VMs only run when demand for cloud computing power is low and cloud provider hardware ends up idling. 
+### Spot Virtual Machines
 
-Spot VMs come with an API of sorts that lets them wake up when demand is low and go to sleep when demand goes up. The tradeoff as a consumer is that you pay less but can take much longer for training runs to complete.
+Spot VMs are virtual machines instances that run in the cloud at a great discount. The catch? The VMs only run when demand for cloud computing power is low. When this happens, the cloud provider ends up with hardware that is idling (read: adds to the electirc bill). This motivates the provider to rent the machines out at lower prices.
+
+Spot VMs come with an API of sorts that lets them wake up when demand is low and go to sleep when demand goes up. The tradeoff as a consumer is that you pay less to get work done but the time to complete the work can be significantly longer that in regular VMs.
+
+The team I was working with was fine with their models taking more time to complete training. While individual training tasks would be delayed, the team often works on multiple different training approaches which allows them to keep a high cadence of research through parallelism.
 
 To evaluate the option of using Spot VMs for cloud training we first reviewed the above board for [pricing for Vertex AI](https://cloud.google.com/vertex-ai/pricing) to the equivalent [pricing for Spot VMs](https://cloud.google.com/compute/vm-instance-pricing) across a variety of geographical reasons and machine types. 
+
+![Image showing the Vertex AI logo, the Google Compute Engine logo and the letters VS between them](/assets/images/vertex-ai-vs-spot-vms.jpg)
+*Image credit: [macrovector](https://www.freepik.com/free-vector/realistic-radiant-magic-portals-pink-vs-blue-with-light-effects-black-background-illustration_7252461.htm#query=3d%20vs&position=1&from_view=search&track=sph)*
+
 
 Here's a table showing the price differences for one such data point that we've found to be representative:
 
@@ -38,6 +48,9 @@ Here's a table showing the price differences for one such data point that we've 
 | Total (rounded)         | $1.276495  | $0.27   |
 
 When you look at the bottom line of the above comparison (pun intended) it's plain to see that Spot VMs are more than 4.5 times cheaper to run than training in Vertex AI.
+
+
+### The Whole Picture
 
 Spot VMs look like a very attractive option all of a sudden. Before the team jumped on the task of repackaging their training code into VM images, we took a broader look at the picture. Sure enough it was a case of the good old "comparing oranges to apples" fallacy.
 
@@ -58,6 +71,6 @@ All of the above capabilities have proven to be of highly valuable to the team i
 
 To truly achieve feature parity with Vertex AI, the team would need to either outsource the work or shift their focus from machine learning to infrastructure development. The effort involves not only developing the functionality but also maintaining it over time.
 
-In my personal story, the team's ultimate conclusion was that at the expected scale of training operations, the cost of transitioning to Spot VMs would significantly exceed the reductions in running costs. 
+At this time, the team's conclusion was that at the expected scale of training operations, the cost of transitioning to Spot VMs would significantly exceed the reductions in running costs. 
 
-How about you? Do you agree? Do you think differently? I'd love to know. To comment on this post, you can reply to this Mastodon toot:
+<!-- What about you? Do you agree? Do you think differently? I'd love to know. To comment on this post, you can reply to this Mastodon toot: -->
