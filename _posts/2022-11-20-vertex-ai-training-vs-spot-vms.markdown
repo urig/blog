@@ -41,7 +41,7 @@ When you look at the bottom line of the above comparison (pun intended) it's pla
 
 Spot VMs look like a very attractive option all of a sudden. Before the team jumped on the task of repackaging their training code into VM images, we took a broader look at the picture. Sure enough it was a case of the good old "comparing oranges to apples" fallacy.
 
-![Image showing apples and oranges](/assets/images/apples-vs-oranges.jpg.jpg)
+![Image showing apples and oranges](/assets/images/apples-vs-oranges.jpg)
 *Image credit: [pvproductions](https://www.freepik.com/free-photo/green-apples-oranges-white-background-closeup_26932164.htm)*
 
 Indeed, when comparing the features of the two services it became clear that while Vertex AI Training offers a rich [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) experience, Spot VMs are a lower level [IaaS](https://en.wikipedia.org/wiki/Infrastructure_as_a_service) offering.
