@@ -21,13 +21,15 @@
 title: Uri Goldstein's Software Development Blog
 email: urig@urig.io
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog by Uri Goldstein on programming and software development. I mainly blog about C#, 
-  Python, Java, TypeScript, unit testing, test automation, continuous integration and 
-  Azure and AWS.
+  A blog by Uri Goldstein on programming and software development. I blog about software
+  craftsmanship and clean code, C#, Python, Java, TypeScript, unit testing, test 
+  automation, continuous integration and Azure, Google Cloud and AWS.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.urig.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: urig
 github_username:  urig
+mastodon:
+- username: urig
+  instance: fosstodon.org
 
 # Build settings
 theme: minima
