@@ -12,7 +12,11 @@ module Jekyll
 
     def render(context)
       site = context.registers[:site]
-      lang = site.config['lang'] || 'en'
+      page = context['page'] || {}
+
+      # Prefer page.lang over site.lang
+      lang = page['lang'] || site.config['lang'] || 'en'
+
       translations_path = "translations/#{lang}.yaml"
       defaults_path = "translations/defaults.yaml"
 
