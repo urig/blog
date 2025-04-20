@@ -26,6 +26,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   automation, continuous integration and Azure, Google Cloud and AWS.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.urig.io" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:categories/:title:output_ext
+
+# Social links
 github_username:  urig
 mastodon:
 - username: urig
