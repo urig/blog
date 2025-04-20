@@ -2,7 +2,7 @@
 layout: post
 title:  "Machine Learning: Vertex AI Training vs. Rolling Your Own on Spot VMs"
 date:   2022-11-20 18:10:00 +0300
-categories: cloud google google-cloud-platform vertex-ai machine-learning vertex-ai-training spot-vms
+tags: cloud google google-cloud-platform vertex-ai machine-learning vertex-ai-training spot-vms
 ---
 
 ---
