@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <html lang="{{ page.lang | default: site.lang | default: "en" }}" {% if page.lang == "he" %}dir="rtl"{% endif %}>
 
   {%- include head.html -%}
 
