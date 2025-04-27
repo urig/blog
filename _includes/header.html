@@ -1,8 +1,16 @@
-<header class="site-header" role="banner">
+<header class="site-header" role="banner" {% if page.lang == "he" %}dir="rtl"{% endif %}>
 
     <div class="wrapper">
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
+
+      {% if page.lang == "he" %}
+      <style>
+        .site-title { float: left; }
+        .site-nav { float: right; }
+      </style>
+      {% endif %}
+
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
   
       {%- if page_paths -%}
