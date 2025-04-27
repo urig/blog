@@ -1,10 +1,11 @@
 ---
 layout: page
-title: About
-lang: en
-permalink: /about/
+title: אודות
+lang: he
+permalink: /he/about/
 ---
 
+שלום!
 Hello and welcome to my software development blog. 
 
 My name is Uri Goldstein and I've been programming computers since about 1985. I've worked as a programmer, a team leader, a consultant and a university lecturer. I've worked in organizations big (~250k people) and small (4 people in one room) and for services, product and project companies.
