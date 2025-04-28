@@ -1,9 +1,11 @@
+{%- include current_lang.html -%}
+
 <!DOCTYPE html>
-  <html lang="{{ page.lang | default: site.lang | default: "en" }}" {% if page.lang == "he" %}dir="rtl"{% endif %}>
+  <html lang="{{ current_lang }}">
 
   {%- include head.html -%}
 
-  <body {% if page.lang == "he" %}dir="rtl"{% endif %}>
+  <body {% if current_lang == "he" %}dir="rtl"{% endif %}>
 
     {%- include header.html -%}
 

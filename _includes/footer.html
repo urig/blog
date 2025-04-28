@@ -11,12 +11,12 @@
               {%- if site.author -%}
                 {{ site.author | escape }}
               {%- else -%}
-                {% localize global.site_title %}
+                {{ site.data.translations.title[current_lang] }}
               {%- endif -%}
-              </li>
-              {%- if site.email -%}
-              <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-              {%- endif -%}
+            </li>
+            {%- if site.email -%}
+              <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email | escape }}</a></li>
+            {%- endif -%}
           </ul>
         </div>
   
@@ -25,7 +25,7 @@
         </div>
   
         <div class="footer-col footer-col-3">
-          <p>{% localize global.site_desc %}</p>
+          <p>{{ site.data.translations.desc[current_lang] }}</p>
         </div>
       </div>
   

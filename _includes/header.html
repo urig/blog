@@ -4,7 +4,9 @@
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-      <a class="site-title" rel="author" href="{{ page.lang == "he" ? "/he" : "/" | relative_url }}">{% localize global.site_title %}</a>
+      <a class="site-title" rel="author" href="{% if current_lang == 'he' %}{{ '/he' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
+        {{ site.data.translations.title[current_lang] }}
+      </a>
       {%- if page_paths -%}
         <nav class="site-nav">
           <input type="checkbox" id="nav-trigger" class="nav-trigger" />

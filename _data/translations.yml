@@ -1,0 +1,23 @@
+# This file contains translations for the site.
+#
+# To use, `{%- include current_lang.html -%}` in the layout and then:
+# `{{ site.data.translations.title[current_lang] }}`
+#
+# Don't forget to correct set the `lang` attribute in frontmatter of the page or post.
+
+title:
+  en: "Uri Goldstein's Software Development Blog"
+  he: "בלוג פיתוח התכנה של אורי גולדשטיין"
+
+desc:
+  en: "Uri Goldstein blogs about software development in C#, Python, Java, 
+    JS, TS, and more: Software craftsmanship, clean code, test automation, 
+    continuous integration, LLMs, generative AI, and the cloud (Azure, 
+    GCP and AWS)."
+  he: "אורי גולדשטיין כותב על פיתוח תוכנה ב- C# Python, Java,
+    JS, TS ועוד: קוד נקי, בדיקות אוטומטיות,
+    C/CD, בינה מלאכותית, ופיתוח בענן (Azure/GCP/AWS)."
+
+posts: 
+  en: "Posts"
+  he: "פוסטים"
