@@ -11,3 +11,8 @@ $base-font-size:   20px;
 hr { margin-top: 10px; margin-bottom: 10px; }
 
 p { margin-top: 10px; margin-bottom: 10px; }
+
+/* Customizing header and footer directions for Hebrew */
+[dir="rtl"] .site-title { float: right; }
+[dir="rtl"] .site-nav { float: left; }
+[dir="rtl"] .footer-col { float: right; }
