@@ -1,7 +1,0 @@
-global:
-  site_title: "Uri Goldstein's Software Development Blog"
-  site_desc:  "Uri Goldstein blogs about software development in C#, Python, Java, 
-    JS, TS, and more: Software craftsmanship, clean code, test automation, 
-    continuous integration, LLMs, generative AI, and the cloud (Azure, 
-    GCP and AWS)."
-  posts: "Posts"
