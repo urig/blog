@@ -25,3 +25,12 @@ posts:
 by_giscus:
   en: "Reactions and comments using"
   he: "תגובות והערות בעזרת"
+
+subscribe:
+  en: "Subscribe"
+  he: "הרשמה"
+
+via_rss: 
+  en: "via RSS"
+  he: "באמצעות RSS"
+  

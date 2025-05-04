@@ -38,7 +38,10 @@ layout: default
       {%- endfor -%}
     </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    <p class="rss-subscribe">
+      {{ site.data.translations.subscribe[current_lang] }} 
+      <a href="{{ "/feed.xml" | relative_url }}">{{ site.data.translations.via_rss[current_lang] }}</a>
+    </p>
   {%- endif -%}
 
 </div>
