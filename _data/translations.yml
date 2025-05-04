@@ -21,3 +21,7 @@ desc:
 posts: 
   en: "Posts"
   he: "פוסטים"
+
+by_giscus:
+  en: "Reactions and comments using"
+  he: "תגובות והערות בעזרת"
