@@ -4,16 +4,11 @@ title: אודות
 lang: he
 permalink: /he/about/
 ---
+ברוכים הבאים לבלוג פיתוח התכנה של אורי גולדשטיין. אורי הוא מפתח תכנה ויועץ עצמאי בעל ותק של למעלה משני עשורים. לאורך השנים עבד אורי כמתכנת, ראש צוות, יועץ ומרצה באקדמיה. הוא צבר ניסיון במגוון רחב של ארגונים — מחברות ענק עם מאות אלפי עובדים ועד צוותים קטנים של ארבעה אנשים בחדר אחד — ובמגוון חברות שירות, מוצר ופרויקטים. בין לקוחותיו חברות כמו:  AT&T  ישראל, יד2, לאומיקרד-מקס, בנק הפועלים ועוד.
 
-שלום!
-Hello and welcome to my software development blog. 
+בבלוג תוכלו למצוא תובנות ולמידות מהמסע המתמשך שלו בעולם הטכנולוגיה. התכנים עוסקים לרוב במיומנויות הנדסת תכנה ותכנות נקי, בשפות כמו  ‎C#‎‏, ‏Python‏, ‏Java‏ ו־TypeScript,  ובספריות וכלים כמו Vue ו־React  . בנוסף, הבלוג עוסק גם בבדיקות יחידה ואוטומציה, שיפור קוד "לגאסי"    (refactoring),  אינטגרציה רציפה (CI/CD), ועבודה עם שירותי ענן כמו Azure, ‏Google Cloud ו־AWS. הקוראים יכולים לצפות לדוגמאות קוד שימושיות, תובנות חדשות בתחום הפיתוח, והבדיקות ולמידה מתוך ניסיון מעשי בשטח.
 
-My name is Uri Goldstein and I've been programming computers since about 1985. I've worked as a programmer, a team leader, a consultant and a university lecturer. I've worked in organizations big (~250k people) and small (4 people in one room) and for services, product and project companies.
+אורי הוא מתכנת עצמאי ויועץ. אם יש לכם בעיה מורכבת שדורשת פתרון, פרויקט מעניין שדורש הובלה, או צוות שזקוק לחיזוק טכנולוגי — הוא ישמח לשמוע מכם. אתם מוזמנים [לשלוח לו מייל](mailto:uri.goldstein@gmail.com) או [ליצור קשר ב-LinkedIn](https://www.linkedin.com/in/urigoldstein/).
 
-In this blog I share what I'm learning on my on-going journey through tech. Mostly that includes software craftsmanship and clean code, C#, Python, Java, TypeScript, Angular, React, unit testing, test automation, refactoring legacy code, continuous integration and Azure, Google Cloud and AWS. You can expect useful code samples, new insights into programming and real-world experiences and learnings..
-
-I am an independent programmer and consultant. If you have a hard problem to solve, an interesting project to build or a team that needs a technical boost, I'd love to hear from you. Please feel free to [email me](mailto:urig@urig.io) or to reach out on [Mastodon](https://fosstodon.org/@urig).
-
-
-Sincerely,<br />
-Uri Goldstein
+בברכה,<br />
+צוות הבלוג של אורי גולדשטיין
