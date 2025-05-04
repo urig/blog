@@ -10,7 +10,7 @@ $base-font-size:   20px;
 
 hr { margin-top: 10px; margin-bottom: 10px; }
 
-p { margin-top: 10px; margin-bottom: 10px; }
+p { margin-top: 20px; margin-bottom: 20px; }
 
 /* Customizing header and footer directions for Hebrew */
 [dir="rtl"] .site-title { float: right; }
@@ -18,3 +18,7 @@ p { margin-top: 10px; margin-bottom: 10px; }
 [dir="rtl"] .footer-col { float: right; }
 
 body { font-family: 'Heebo', sans-serif; }
+
+[dir="rtl"]
+ul,ol { margin-right: 30px; }
+/*li { margin-right: 26px !important;}*/
